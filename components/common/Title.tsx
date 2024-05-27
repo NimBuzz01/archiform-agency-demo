@@ -3,7 +3,17 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import React from "react";
 
-const Title = ({ text, className }: { text: string; className?: string }) => {
+const Title = ({
+  text,
+  className,
+  duration = 0.4,
+  stagger = 0.01,
+}: {
+  text: string;
+  className?: string;
+  duration?: number;
+  stagger?: number;
+}) => {
   const words = text.split(" ");
 
   const containerVariants = {
@@ -11,7 +21,7 @@ const Title = ({ text, className }: { text: string; className?: string }) => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.05,
+        staggerChildren: stagger,
       },
     },
   };
@@ -20,7 +30,7 @@ const Title = ({ text, className }: { text: string; className?: string }) => {
     hidden: { y: "100%" },
     visible: {
       y: "0%",
-      transition: { duration: 0.8 },
+      transition: { duration: duration },
     },
   };
 

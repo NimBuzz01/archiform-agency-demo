@@ -33,7 +33,7 @@ const Typography = ({
   return (
     <div
       className={cn(
-        "relative inline-flex max-w-lg text-base sm:text-lg lg:text-xl font-medium tracking-wide",
+        "relative inline-flex max-w-lg font-medium tracking-wide text-sm sm:text-base",
         className
       )}
     >
