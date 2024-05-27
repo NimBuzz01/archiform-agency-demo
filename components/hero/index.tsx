@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="min-h-screen">
       <HeroTitle />
-      <Description delay={1200} />
+      <Description />
       <HeroImage delay={1.2} />
     </div>
   );

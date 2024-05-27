@@ -4,9 +4,9 @@ import PageLink from "../hero/components/PageLink";
 import Typography from "../common/Typography";
 import { motion } from "framer-motion";
 
-const slideUp = {
-  initial: { y: "-100%", opacity: 0 },
-  animate: { y: "0%", opacity: 1 },
+const reveal = {
+  initial: { y: "0%" },
+  animate: { y: "100%" },
 };
 
 const About = () => {
@@ -15,17 +15,20 @@ const About = () => {
       <div className="flex gap-10 flex-col-reverse lg:flex-row">
         <div className="lg:w-2/5 w-full">
           <motion.div className="w-full sm:max-w-xs relative aspect-square overflow-hidden">
-            <motion.img
-              variants={slideUp}
+            <motion.div
+              className="absolute inset-0 bg-cmsecondary z-10"
+              variants={reveal}
               initial="initial"
               whileInView="animate"
               viewport={{ margin: "-50px", once: true }}
-              transition={{ duration: 1, delay: 1 }}
+              transition={{ duration: 0.6, delay: 1 }}
+            ></motion.div>
+            <img
               src="/images/building-2.webp"
               alt="building-2"
               className="w-full h-full"
               style={{ objectFit: "contain" }}
-            ></motion.img>
+            />
           </motion.div>
         </div>
         <div className="lg:w-3/5 w-full flex flex-col gap-10">

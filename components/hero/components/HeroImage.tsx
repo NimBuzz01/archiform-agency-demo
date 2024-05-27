@@ -3,9 +3,9 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import React from "react";
 
-const slideUp = {
-  initial: { y: "-100%", opacity: 0 },
-  animate: { y: "0%", opacity: 1 },
+const reveal = {
+  initial: { y: "0%" },
+  animate: { y: "100%" },
 };
 
 const HeroImage = ({
@@ -22,15 +22,18 @@ const HeroImage = ({
         className
       )}
     >
-      <motion.img
-        variants={slideUp}
+      <motion.div
+        className="absolute inset-0 bg-cmsecondary z-10"
+        variants={reveal}
         initial="initial"
         animate="animate"
-        transition={{ duration: 1.6, delay }}
+        transition={{ duration: 1, delay }}
+      ></motion.div>
+      <img
         src="/images/building.webp"
         className="w-full h-full"
         style={{ objectFit: "cover" }}
-      ></motion.img>
+      />
     </motion.div>
   );
 };
