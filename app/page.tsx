@@ -1,6 +1,7 @@
 "use client";
 import Loader from "@/components/Loader";
 import About from "@/components/about";
+import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
@@ -30,6 +31,7 @@ export default function Home() {
           <Hero />
           <About />
           <Projects />
+          <Contact />
         </main>
         <Footer />
       </AnimatePresence>

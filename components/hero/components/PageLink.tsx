@@ -17,10 +17,12 @@ export default function PageLink({
   text,
   href,
   className,
+  arrowSize,
 }: {
   text: string;
   href: string;
   className?: string;
+  arrowSize?: string;
 }) {
   const [hovered, setHovered] = useState(false);
 
@@ -44,7 +46,12 @@ export default function PageLink({
     >
       <div className="flex items-center">
         <Link href={href}>{text}</Link>
-        <ArrowRight className="group-hover:translate-x-1 transition-all w-6 h-4" />
+        <ArrowRight
+          className={cn(
+            "group-hover:translate-x-1 transition-all w-6 h-4",
+            arrowSize
+          )}
+        />
       </div>
       <motion.div
         className="absolute bottom-0 left-0 bg-black h-0.5"
