@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
+import Services from "@/components/services";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -31,6 +32,7 @@ export default function Home() {
           <Hero />
           <About />
           <Projects />
+          <Services />
           <Contact />
         </main>
         <Footer />
