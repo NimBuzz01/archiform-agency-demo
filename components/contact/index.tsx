@@ -4,7 +4,7 @@ import PageLink from "../hero/components/PageLink";
 
 const Contact = () => {
   return (
-    <div className="py-40 space-y-10 border-t-2 border-cmprimary">
+    <div className=" px-2 py-40 space-y-10 border-t-2 border-cmprimary">
       <Title
         text="We can help you turn your architectural dreams into reality."
         className="normal-case"
