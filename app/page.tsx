@@ -1,5 +1,6 @@
 "use client";
 import Loader from "@/components/Loader";
+import About from "@/components/about";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import { AnimatePresence } from "framer-motion";
@@ -25,6 +26,7 @@ export default function Home() {
         <main className="sm:container">
           <Header />
           <Hero />
+          <About />
         </main>
       </AnimatePresence>
     </main>
