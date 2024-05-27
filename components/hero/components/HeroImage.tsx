@@ -8,7 +8,7 @@ const slideUp = {
   animate: { y: "0%", opacity: 1 },
 };
 
-const Image = ({
+const HeroImage = ({
   className,
   delay,
 }: {
@@ -27,7 +27,7 @@ const Image = ({
         initial="initial"
         animate="animate"
         transition={{ duration: 1.6, delay }}
-        src="/building.webp"
+        src="/images/building.webp"
         className="w-full h-full"
         style={{ objectFit: "cover" }}
       ></motion.img>
@@ -35,4 +35,4 @@ const Image = ({
   );
 };
 
-export default Image;
+export default HeroImage;

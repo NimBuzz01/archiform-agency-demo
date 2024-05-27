@@ -1,14 +1,14 @@
 import React from "react";
-import MainTitle from "./components/MainTitle";
 import Description from "./components/Description";
-import Image from "./components/Image";
+import HeroImage from "./components/HeroImage";
+import HeroTitle from "./components/HeroTitle";
 
 const Hero = () => {
   return (
     <div className="min-h-screen">
-      <MainTitle />
+      <HeroTitle />
       <Description delay={1200} />
-      <Image delay={1.2} />
+      <HeroImage delay={1.2} />
     </div>
   );
 };
