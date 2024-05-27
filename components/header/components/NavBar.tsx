@@ -12,7 +12,7 @@ export default function NavBar() {
       initial="initial"
       animate="enter"
       exit="exit"
-      className="h-screen bg-cmaccent text-cmsecondary w-full z-20 max-w-lg p-10 sm:p-24 fixed right-0 top-0"
+      className="h-screen bg-cmprimary text-cmsecondary w-full z-20 max-w-lg p-10 sm:p-24 fixed right-0 top-0"
     >
       <div className="box-border h-full flex flex-col justify-between">
         <div className="flex flex-col text-4xl sm:text-5xl gap-3 mt-20">

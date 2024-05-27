@@ -24,7 +24,7 @@ export default function Curve() {
   };
 
   return (
-    <svg className="absolute top-0 left-[-95px] w-24 h-full fill-cmaccent stroke-none">
+    <svg className="absolute top-0 left-[-95px] w-24 h-full fill-cmprimary stroke-none">
       <motion.path
         variants={curve}
         initial="initial"
