@@ -12,7 +12,7 @@ const Description = ({ delay }: { delay?: number }) => {
   }, [visible]);
 
   return (
-    <div className="grid px-2 grid-cols-2 md:grid-cols-3 grid-rows-2 gap-4 sm:gap-10 my-10 uppercase md:text-lg font-medium text-sm sm:text-base">
+    <div className="grid px-2 grid-cols-2 md:grid-cols-3 grid-rows-2 gap-4 sm:gap-10 my-10 uppercase md:text-lg font-medium">
       {visible && (
         <>
           <div className="row-span-2 hidden md:block">
@@ -37,7 +37,11 @@ const Description = ({ delay }: { delay?: number }) => {
             <Typography text="We make your wildest architectural dreams come true" />
           </div>
           <div className="md:hidden place-items-end">
-            <PageLink text="Get In Touch" href="#contact" />
+            <PageLink
+              text="Get In Touch"
+              href="#contact"
+              className="font-semibold"
+            />
           </div>
         </>
       )}
