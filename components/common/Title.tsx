@@ -11,7 +11,7 @@ const Title = ({ text, className }: { text: string; className?: string }) => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.02,
+        staggerChildren: 0.05,
       },
     },
   };
@@ -20,12 +20,17 @@ const Title = ({ text, className }: { text: string; className?: string }) => {
     hidden: { y: "100%" },
     visible: {
       y: "0%",
-      transition: { duration: 0.5 },
+      transition: { duration: 0.8 },
     },
   };
 
   return (
-    <div className={cn("relative text-cmsecondary inline-flex", className)}>
+    <div
+      className={cn(
+        "relative text-cmsecondary text-3xl sm:text-4xl md:text-5xl uppercase inline-flex font-medium",
+        className
+      )}
+    >
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -39,17 +44,11 @@ const Title = ({ text, className }: { text: string; className?: string }) => {
               <motion.span
                 key={`${wordIndex}-${letterIndex}`}
                 variants={letterVariants}
-                className="text-3xl sm:text-4xl md:text-5xl uppercase font-medium"
               >
                 {letter}
               </motion.span>
             ))}
-            <motion.span
-              variants={letterVariants}
-              className="text-3xl sm:text-4xl md:text-5xl uppercase font-medium"
-            >
-              &nbsp;
-            </motion.span>
+            <motion.span variants={letterVariants}>&nbsp;</motion.span>
           </div>
         ))}
       </motion.div>
