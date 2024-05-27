@@ -20,3 +20,18 @@ export const navLinks = [
     href: "#contact",
   },
 ];
+
+export const socialLinks = [
+  {
+    title: "Facebook",
+    href: "#",
+  },
+  {
+    title: "Instagram",
+    href: "#",
+  },
+  {
+    title: "LinkedIn",
+    href: "#",
+  },
+];

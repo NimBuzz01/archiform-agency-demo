@@ -1,6 +1,7 @@
 "use client";
 import Loader from "@/components/Loader";
 import About from "@/components/about";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
@@ -24,12 +25,13 @@ export default function Home() {
     <main className="min-h-screen">
       <AnimatePresence mode="wait">
         {loading && <Loader key="loader" />}
+        <Header />
         <main className="sm:container">
-          <Header />
           <Hero />
           <About />
           <Projects />
         </main>
+        <Footer />
       </AnimatePresence>
     </main>
   );
