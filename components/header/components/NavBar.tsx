@@ -12,10 +12,10 @@ export default function NavBar() {
       initial="initial"
       animate="enter"
       exit="exit"
-      className="h-screen bg-slate-100 z-20 fixed right-0 top-0"
+      className="h-screen bg-slate-100 w-full z-20 max-w-lg p-10 sm:p-24 fixed right-0 top-0"
     >
-      <div className="box-border h-full p-24 flex flex-col justify-between">
-        <div className="flex flex-col text-5xl gap-3 mt-20">
+      <div className="box-border h-full flex flex-col justify-between">
+        <div className="flex flex-col text-4xl sm:text-5xl gap-3 mt-20">
           <div className="border-b uppercase text-xs mb-10">
             <p>Navigation</p>
           </div>
@@ -23,7 +23,7 @@ export default function NavBar() {
             return <NavLink key={index} data={{ ...data, index }}></NavLink>;
           })}
         </div>
-        <div className="flex w-full justify-between text-xs gap-10">
+        <div className="flex w-full flex-wrap sm:flex-nowrap justify-between text-xs gap-10">
           <a>Facebook</a>
           <a>Instagram</a>
           <a>Behance</a>
