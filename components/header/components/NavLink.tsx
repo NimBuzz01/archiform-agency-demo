@@ -24,7 +24,7 @@ export default function NavLink({ data }: NavLinkProps) {
     >
       <Link href={href}>{title}</Link>
       <motion.div
-        className="absolute bottom-0 left-0 bg-black h-0.5"
+        className="absolute bottom-0 left-0 bg-cmsecondary h-0.5"
         variants={underline}
         initial="hidden"
         animate={hovered ? "visible" : "hidden"}

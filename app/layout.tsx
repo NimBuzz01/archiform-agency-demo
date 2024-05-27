@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
+      <body className={`${raleway.className} bg-cmsecondary text-cmprimary`}>
         <ScrollProvider>{children}</ScrollProvider>
       </body>
     </html>

@@ -1,3 +1,4 @@
+"use client";
 import Typography from "@/components/common/Typography";
 import React, { useState, useEffect } from "react";
 import PageLink from "./PageLink";

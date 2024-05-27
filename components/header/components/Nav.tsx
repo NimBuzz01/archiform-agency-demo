@@ -11,7 +11,7 @@ const Nav = () => {
       <Button
         variant="link"
         onClick={() => setIsActive(!isActive)}
-        className="uppercase font-semibold z-50"
+        className="uppercase font-semibold"
       >
         Menu
       </Button>

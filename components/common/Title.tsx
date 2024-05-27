@@ -27,7 +27,7 @@ const Title = ({ text, className }: { text: string; className?: string }) => {
   return (
     <div
       className={cn(
-        "relative text-cmsecondary text-3xl sm:text-4xl md:text-5xl uppercase inline-flex font-medium",
+        "relative text-3xl sm:text-4xl md:text-5xl uppercase inline-flex font-medium",
         className
       )}
     >
