@@ -18,11 +18,15 @@ export default function PageLink({
   href,
   className,
   arrowSize,
+  disableArrow,
+  underlineColor = "bg-cmprimary",
 }: {
   text: string;
   href: string;
   className?: string;
   arrowSize?: string;
+  disableArrow?: boolean;
+  underlineColor?: string;
 }) {
   const [hovered, setHovered] = useState(false);
 
@@ -46,15 +50,17 @@ export default function PageLink({
     >
       <div className="flex items-center">
         <Link href={href}>{text}</Link>
-        <ArrowRight
-          className={cn(
-            "group-hover:translate-x-1 transition-all w-6 h-4",
-            arrowSize
-          )}
-        />
+        {!disableArrow && (
+          <ArrowRight
+            className={cn(
+              "group-hover:translate-x-1 transition-all w-6 h-4",
+              arrowSize
+            )}
+          />
+        )}
       </div>
       <motion.div
-        className="absolute bottom-0 left-0 bg-black h-0.5"
+        className={cn("absolute bottom-0 left-0 h-0.5", underlineColor)}
         variants={underline}
         initial="hidden"
         animate={hovered ? "visible" : "hidden"}
