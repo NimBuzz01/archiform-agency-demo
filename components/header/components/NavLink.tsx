@@ -5,9 +5,11 @@ import { useState } from "react";
 
 interface NavLinkProps {
   data: any;
+  isActive: boolean;
+  setIsActive: (isActive: boolean) => void;
 }
 
-export default function NavLink({ data }: NavLinkProps) {
+export default function NavLink({ data, isActive, setIsActive }: NavLinkProps) {
   const { title, href, index } = data;
   const [hovered, setHovered] = useState(false);
 
@@ -21,6 +23,7 @@ export default function NavLink({ data }: NavLinkProps) {
       exit="exit"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={() => setIsActive(!isActive)}
     >
       <Link href={href}>{title}</Link>
       <motion.div

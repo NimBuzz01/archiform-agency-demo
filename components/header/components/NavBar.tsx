@@ -4,8 +4,15 @@ import Curve from "./Curve";
 import { menuSlide } from "../anim";
 import NavLink from "./NavLink";
 import { navLinks } from "@/lib/data";
+import { X } from "lucide-react";
 
-export default function NavBar() {
+export default function NavBar({
+  isActive,
+  setIsActive,
+}: {
+  isActive: boolean;
+  setIsActive: (isActive: boolean) => void;
+}) {
   return (
     <motion.div
       variants={menuSlide}
@@ -14,13 +21,24 @@ export default function NavBar() {
       exit="exit"
       className="h-screen bg-cmprimary text-cmsecondary w-full z-20 max-w-lg p-10 sm:p-24 fixed right-0 top-0"
     >
+      <X
+        onClick={() => setIsActive(!isActive)}
+        className="absolute w-12 h-12 top-5 right-5 cursor-pointer"
+      />
       <div className="box-border h-full flex flex-col justify-between">
         <div className="flex flex-col text-4xl sm:text-5xl gap-3 mt-20">
           <div className="border-b uppercase text-xs mb-10">
             <p>Navigation</p>
           </div>
           {navLinks.map((data, index) => {
-            return <NavLink key={index} data={{ ...data, index }}></NavLink>;
+            return (
+              <NavLink
+                key={index}
+                data={{ ...data, index }}
+                isActive={isActive}
+                setIsActive={setIsActive}
+              ></NavLink>
+            );
           })}
         </div>
         <div className="flex w-full flex-wrap sm:flex-nowrap justify-between text-xs gap-10">

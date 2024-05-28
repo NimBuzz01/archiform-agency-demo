@@ -15,7 +15,9 @@ const Nav = () => {
       >
         Menu
       </Button>
-      <AnimatePresence mode="wait">{isActive && <NavBar />}</AnimatePresence>
+      <AnimatePresence mode="wait">
+        {isActive && <NavBar isActive={isActive} setIsActive={setIsActive} />}
+      </AnimatePresence>
     </>
   );
 };
