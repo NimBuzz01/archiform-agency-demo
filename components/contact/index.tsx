@@ -14,7 +14,7 @@ const Contact = () => {
       />
       <PageLink
         text="Get started today"
-        href="#"
+        href="/contact"
         arrowSize="w-12 h-10"
         className="text-3xl sm:text-4xl md:text-5xl"
       />

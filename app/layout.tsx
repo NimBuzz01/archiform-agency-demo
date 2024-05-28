@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
 import ScrollProvider from "@/components/ScrollProvider";
+import { Toaster } from "react-hot-toast";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     >
       <body className={`${raleway.className} bg-cmsecondary text-cmprimary`}>
         <ScrollProvider>{children}</ScrollProvider>
+        <Toaster position="top-right" />
       </body>
     </html>
   );
