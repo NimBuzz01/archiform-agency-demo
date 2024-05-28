@@ -3,6 +3,7 @@ import Title from "../common/Title";
 import { CopyrightIcon } from "lucide-react";
 import { navLinks, socialLinks } from "@/lib/data";
 import Link from "next/link";
+import PageLink from "../hero/components/PageLink";
 
 const Footer = () => {
   return (
@@ -24,9 +25,14 @@ const Footer = () => {
           </div>
           <div className="md:ml-auto flex flex-col text-sm gap-2 uppercase">
             {navLinks.map((link) => (
-              <Link href={link.href} key={link.href}>
-                {link.title}
-              </Link>
+              <div key={link.href}>
+                <PageLink
+                  text={link.title}
+                  href={link.href}
+                  disableArrow
+                  underlineColor="bg-cmsecondary"
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -50,9 +56,13 @@ const Footer = () => {
           </div>
           <div className="flex items-center text-sm gap-4 uppercase">
             {socialLinks.map((link) => (
-              <Link href={link.href} key={link.href}>
-                {link.title}
-              </Link>
+              <PageLink
+                text={link.title}
+                key={link.href}
+                href={link.href}
+                disableArrow
+                underlineColor="bg-cmsecondary"
+              />
             ))}
           </div>
         </div>
