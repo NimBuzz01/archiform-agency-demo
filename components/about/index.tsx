@@ -9,7 +9,11 @@ const About = () => {
     <div className="py-16 min-h-screen px-2">
       <div className="flex gap-10 flex-col-reverse lg:flex-row">
         <div className="lg:w-2/5 w-full">
-          <MaskImage src="/images/building-2.webp" alt="building-2" />
+          <MaskImage
+            src="/images/building-2.webp"
+            alt="building-2"
+            className="sm:max-w-xs"
+          />
         </div>
         <div className="lg:w-3/5 w-full flex flex-col gap-10">
           <div>

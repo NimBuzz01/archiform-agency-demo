@@ -24,10 +24,7 @@ const MaskImage = ({
 }) => {
   return (
     <motion.div
-      className={cn(
-        "w-full sm:max-w-xs relative aspect-square overflow-hidden",
-        className
-      )}
+      className={cn("w-full relative aspect-square overflow-hidden", className)}
     >
       <motion.div
         className="absolute inset-0 bg-cmsecondary z-10"
