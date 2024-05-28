@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "../common/Typography";
 import Title from "../common/Title";
 import PageLink from "../hero/components/PageLink";
+import ProjectList from "./components/ProjectList";
 
 const Projects = () => {
   return (
@@ -30,7 +31,7 @@ const Projects = () => {
           />
         </div>
       </div>
-      {/* Projects Go Here */}
+      <ProjectList />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import ServiceList from "./components/ServiceList";
 
 const Services = () => {
   return (
-    <div className="min-h-screen px-2">
+    <div className="min-h-screen px-2 py-16">
       <div className="">
         <Title text="Our Services Gurantee the highest level of professionalism and quality" />
       </div>

@@ -58,3 +58,27 @@ export const services = [
     src: "/images/visualization.webp",
   },
 ];
+
+export const projects = [
+  {
+    mainImg: "/images/building.webp",
+    img1: "/images/building-2.webp",
+    img2: "/images/interior-design.webp",
+    title: "Sityscape Towers",
+    type: "Architectural Design",
+  },
+  {
+    mainImg: "/images/reconstruction.webp",
+    img1: "/images/building-2.webp",
+    img2: "/images/interior-design.webp",
+    title: "Heights Residence",
+    type: "Interior Design",
+  },
+  {
+    mainImg: "/images/building.webp",
+    img1: "/images/building-2.webp",
+    img2: "/images/interior-design.webp",
+    title: "Global City",
+    type: "Visualization and Modeling",
+  },
+];
