@@ -13,6 +13,7 @@ const About = () => {
             src="/images/building-2.webp"
             alt="building-2"
             className="sm:max-w-xs"
+            delay={1}
           />
         </div>
         <div className="lg:w-3/5 w-full flex flex-col gap-10">

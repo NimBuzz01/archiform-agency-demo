@@ -13,7 +13,7 @@ const MaskImage = ({
   alt,
   objectFit = "contain",
   duration = 0.6,
-  delay = 1,
+  delay = 0.6,
 }: {
   className?: string;
   src: string;
