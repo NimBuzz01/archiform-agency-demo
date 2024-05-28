@@ -2,7 +2,6 @@ import React from "react";
 import Title from "../common/Title";
 import { CopyrightIcon } from "lucide-react";
 import { navLinks, socialLinks } from "@/lib/data";
-import Link from "next/link";
 import PageLink from "../hero/components/PageLink";
 
 const Footer = () => {
@@ -25,7 +24,7 @@ const Footer = () => {
           </div>
           <div className="md:ml-auto flex flex-col text-sm gap-2 uppercase">
             {navLinks.map((link) => (
-              <div key={link.href}>
+              <div key={link.title}>
                 <PageLink
                   text={link.title}
                   href={link.href}
@@ -58,7 +57,7 @@ const Footer = () => {
             {socialLinks.map((link) => (
               <PageLink
                 text={link.title}
-                key={link.href}
+                key={link.title}
                 href={link.href}
                 disableArrow
                 underlineColor="bg-cmsecondary"
