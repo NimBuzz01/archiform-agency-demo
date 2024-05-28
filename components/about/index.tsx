@@ -6,7 +6,7 @@ import MaskImage from "../common/MaskImage";
 
 const About = () => {
   return (
-    <div className="py-16 min-h-screen px-2">
+    <div id="about" className="py-16 min-h-screen px-2">
       <div className="flex gap-10 flex-col-reverse lg:flex-row">
         <div className="lg:w-2/5 w-full">
           <MaskImage

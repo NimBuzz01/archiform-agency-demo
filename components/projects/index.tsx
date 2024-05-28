@@ -6,7 +6,7 @@ import ProjectList from "./components/ProjectList";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen px-2">
+    <div id="projects" className="min-h-screen px-2">
       <div>
         <Title text="We Have Successfully Implemented a Wide Range of Projects of Varying Complexity and Scale" />
       </div>
