@@ -17,7 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="scrollbar-thin scrollbar-thumb-cmprimary scrollbar-track-cmsecondary"
+    >
       <body className={`${raleway.className} bg-cmsecondary text-cmprimary`}>
         <ScrollProvider>{children}</ScrollProvider>
       </body>
