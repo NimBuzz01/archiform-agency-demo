@@ -35,3 +35,26 @@ export const socialLinks = [
     href: "#",
   },
 ];
+
+export const services = [
+  {
+    title: "Architectural Design",
+    src: "/images/architecture-design.webp",
+  },
+  {
+    title: "Interior Design",
+    src: "/images/interior-design.webp",
+  },
+  {
+    title: "Landscape Design",
+    src: "/images/landscape-design.webp",
+  },
+  {
+    title: "Reconstruction and Restoration",
+    src: "/images/reconstruction.webp",
+  },
+  {
+    title: "Visualization and Modeling",
+    src: "/images/visualization.webp",
+  },
+];

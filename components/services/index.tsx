@@ -1,6 +1,7 @@
 import React from "react";
 import Typography from "../common/Typography";
 import Title from "../common/Title";
+import ServiceList from "./components/ServiceList";
 
 const Services = () => {
   return (
@@ -22,7 +23,7 @@ const Services = () => {
           />
         </div>
       </div>
-      {/* Projects Go Here */}
+      <ServiceList />
     </div>
   );
 };
