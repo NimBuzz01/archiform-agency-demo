@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="fixed px-3 py-10 sm:py-16 sm:container bottom-0 w-full h-[600px]">
         <div className="flex gap-10 flex-wrap">
           <div className="text-sm">
-            <p className="font-bold text-base mb-6">Let's Talk</p>
+            <p className="font-bold text-base mb-6">Let&apos;s Talk</p>
             <p>hello@archiformagency</p>
             <p>+94 123 456 789</p>
           </div>
