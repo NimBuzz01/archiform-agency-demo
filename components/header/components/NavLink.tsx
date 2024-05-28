@@ -14,24 +14,26 @@ export default function NavLink({ data, isActive, setIsActive }: NavLinkProps) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <motion.div
-      className="relative inline-flex"
-      custom={index}
-      variants={slide}
-      initial="initial"
-      animate="enter"
-      exit="exit"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      onClick={() => setIsActive(!isActive)}
-    >
-      <Link href={href}>{title}</Link>
+    <div>
       <motion.div
-        className="absolute bottom-0 left-0 bg-cmsecondary h-0.5"
-        variants={underline}
-        initial="hidden"
-        animate={hovered ? "visible" : "hidden"}
-      />
-    </motion.div>
+        className="relative inline-flex "
+        custom={index}
+        variants={slide}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        onClick={() => setIsActive(!isActive)}
+      >
+        <Link href={href}>{title}</Link>
+        <motion.div
+          className="absolute bottom-0 left-0 bg-cmsecondary h-0.5"
+          variants={underline}
+          initial="hidden"
+          animate={hovered ? "visible" : "hidden"}
+        />
+      </motion.div>
+    </div>
   );
 }
