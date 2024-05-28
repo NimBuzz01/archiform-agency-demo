@@ -1,7 +1,8 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
-import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef } from "react";
+import Image from "next/image";
 
 const reveal = {
   initial: { y: "0%" },
@@ -15,12 +16,20 @@ const HeroImage = ({
   className?: string;
   delay?: number;
 }) => {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start start", "end start"],
+  });
+  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "150vh"]);
+
   return (
     <motion.div
       className={cn(
         "relative w-full h-[40dvh] sm:h-[60dvh] flex items-center justify-center overflow-hidden",
         className
       )}
+      style={{ y }}
     >
       <motion.div
         className="absolute inset-0 bg-cmsecondary z-10"
@@ -29,9 +38,10 @@ const HeroImage = ({
         animate="animate"
         transition={{ duration: 1, delay }}
       ></motion.div>
-      <img
+      <Image
         src="/images/building.webp"
-        className="w-full h-full"
+        fill
+        alt="Hero Image"
         style={{ objectFit: "cover" }}
       />
     </motion.div>

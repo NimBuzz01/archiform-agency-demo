@@ -5,7 +5,7 @@ import HeroTitle from "./components/HeroTitle";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-hidden">
       <HeroTitle />
       <Description />
       <HeroImage delay={1.2} />
