@@ -29,7 +29,6 @@ const HeroImage = ({
         "relative w-full h-[40dvh] sm:h-[60dvh] flex items-center justify-center overflow-hidden",
         className
       )}
-      style={{ y }}
     >
       <motion.div
         className="absolute inset-0 bg-cmsecondary z-10"
@@ -38,11 +37,10 @@ const HeroImage = ({
         animate="animate"
         transition={{ duration: 1, delay }}
       ></motion.div>
-      <Image
+      <motion.img
         src="/images/building.webp"
-        fill
         alt="Hero Image"
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover", y }}
       />
     </motion.div>
   );
