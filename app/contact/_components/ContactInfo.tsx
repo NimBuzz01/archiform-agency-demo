@@ -1,5 +1,5 @@
 import Typography from "@/components/common/Typography";
-import PageLink from "@/components/hero/components/PageLink";
+import PageLink from "@/components/common/PageLink";
 import { socialLinks } from "@/lib/data";
 import React from "react";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../common/Title";
-import PageLink from "../hero/components/PageLink";
+import PageLink from "../common/PageLink";
 
 const Contact = () => {
   return (

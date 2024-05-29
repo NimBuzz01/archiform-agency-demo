@@ -2,7 +2,7 @@ import React from "react";
 import Title from "../common/Title";
 import { CopyrightIcon } from "lucide-react";
 import { navLinks, socialLinks } from "@/lib/data";
-import PageLink from "../hero/components/PageLink";
+import PageLink from "../common/PageLink";
 
 const Footer = () => {
   return (

@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import Curve from "./Curve";
 import { menuSlide } from "../anim";
 import NavLink from "./NavLink";
-import { navLinks } from "@/lib/data";
+import { navLinks, socialLinks } from "@/lib/data";
 import { X } from "lucide-react";
+import PageLink from "@/components/common/PageLink";
 
 export default function NavBar({
   isActive,
@@ -42,10 +43,16 @@ export default function NavBar({
           })}
         </div>
         <div className="flex w-full flex-wrap sm:flex-nowrap justify-between text-xs gap-10">
-          <a>Facebook</a>
-          <a>Instagram</a>
-          <a>Behance</a>
-          <a>LinkedIn</a>
+          {socialLinks.map((link) => (
+            <div key={link.title}>
+              <PageLink
+                text={link.title}
+                href={link.href}
+                disableArrow
+                underlineColor="bg-cmsecondary"
+              />
+            </div>
+          ))}
         </div>
       </div>
       <Curve />

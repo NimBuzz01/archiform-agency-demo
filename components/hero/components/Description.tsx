@@ -1,7 +1,7 @@
 "use client";
 import Typography from "@/components/common/Typography";
 import React, { useState, useEffect } from "react";
-import PageLink from "./PageLink";
+import PageLink from "../../common/PageLink";
 
 const Description = ({ delay }: { delay?: number }) => {
   const [visible, setVisible] = useState(false);

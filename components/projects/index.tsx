@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "../common/Typography";
 import Title from "../common/Title";
-import PageLink from "../hero/components/PageLink";
+import PageLink from "../common/PageLink";
 import ProjectList from "./components/ProjectList";
 
 const Projects = () => {
