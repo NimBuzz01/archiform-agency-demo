@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import ContactForm from "./_components/ContactForm";
 import Title from "@/components/common/Title";
 import Header from "@/components/header";
@@ -7,6 +7,9 @@ import Footer from "@/components/footer";
 import ContactInfo from "./_components/ContactInfo";
 
 const ContactPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header delay={0.6} />
