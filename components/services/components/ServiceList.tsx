@@ -8,8 +8,8 @@ export default function ServiceList() {
   const [modal, setModal] = useState({ active: false, index: 0 });
 
   return (
-    <main className="flex py-20 items-center justify-center">
-      <div className="w-full flex flex-col items-center justify-center">
+    <main className="flex items-center justify-center py-20">
+      <div className="flex flex-col items-center justify-center w-full">
         {services.map((project, index) => {
           return (
             <Service

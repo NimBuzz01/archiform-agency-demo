@@ -4,7 +4,6 @@ import Curve from "./Curve";
 import { menuSlide } from "../anim";
 import NavLink from "./NavLink";
 import { navLinks, socialLinks } from "@/lib/data";
-import { X } from "lucide-react";
 import PageLink from "@/components/common/PageLink";
 
 export default function NavBar({
@@ -20,11 +19,11 @@ export default function NavBar({
       initial="initial"
       animate="enter"
       exit="exit"
-      className="h-screen bg-cmprimary text-cmsecondary w-full z-20 max-w-lg p-10 sm:p-24 fixed right-0 top-0"
+      className="fixed top-0 right-0 z-20 w-full h-screen max-w-lg p-10 bg-cmprimary text-cmsecondary sm:p-24"
     >
-      <div className="box-border h-full flex flex-col justify-between">
-        <div className="flex flex-col text-4xl sm:text-5xl gap-3 mt-20">
-          <div className="border-b uppercase text-xs mb-10">
+      <div className="box-border flex flex-col justify-between h-full">
+        <div className="flex flex-col gap-3 mt-20 text-4xl sm:text-5xl">
+          <div className="mb-10 text-xs uppercase border-b">
             <p>Navigation</p>
           </div>
           {navLinks.map((data, index) => {
@@ -38,7 +37,7 @@ export default function NavBar({
             );
           })}
         </div>
-        <div className="flex w-full flex-wrap sm:flex-nowrap justify-between text-xs gap-10">
+        <div className="flex flex-wrap justify-between w-full gap-10 text-xs sm:flex-nowrap">
           {socialLinks.map((link) => (
             <div key={link.title}>
               <PageLink

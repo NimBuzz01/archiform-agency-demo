@@ -14,7 +14,7 @@ const HeroTitle = () => {
         text="Agency"
         stagger={0.05}
         duration={0.8}
-        className="font-light text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl"
+        className="text-4xl font-light sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl"
       />
     </div>
   );

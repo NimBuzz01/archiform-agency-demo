@@ -51,7 +51,7 @@ const ContactForm = () => {
                   placeholder="johndoe@gmail.com"
                   {...field}
                   required
-                  className="outline-none border-b sm:text-base border-cmaccent rounded-lg bg-cmsecondary"
+                  className="border-b rounded-lg outline-none sm:text-base border-cmaccent bg-cmsecondary"
                 />
               </FormControl>
             </FormItem>
@@ -69,7 +69,7 @@ const ContactForm = () => {
                   {...field}
                   required
                   rows={10}
-                  className="border-cmaccent sm:text-base bg-cmsecondary outline-none rounded-lg border-b"
+                  className="border-b rounded-lg outline-none border-cmaccent sm:text-base bg-cmsecondary"
                 />
               </FormControl>
             </FormItem>
@@ -81,7 +81,7 @@ const ContactForm = () => {
             className="group w-full max-w-[10rem] flex items-center justify-center gap-2 py-6 rounded-full bg-cmprimary text-cmsecondary outline-none transition-all  hover:bg-cmprimary/90"
           >
             Submit{" "}
-            <Send className="w-5 h-5 opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
+            <Send className="w-5 h-5 transition-all opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
           </Button>
         </div>
       </form>

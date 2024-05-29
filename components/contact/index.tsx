@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className=" px-2 py-40 space-y-10 border-t-2 border-cmprimary"
+      className="px-2 py-40 space-y-10 border-t-2 border-cmprimary"
     >
       <Title
         text="We can help you turn your architectural dreams into reality."

@@ -6,9 +6,9 @@ import MaskImage from "../common/MaskImage";
 
 const About = () => {
   return (
-    <div id="about" className="py-16 min-h-screen px-2">
-      <div className="flex gap-10 flex-col-reverse lg:flex-row">
-        <div className="lg:w-2/5 w-full">
+    <div id="about" className="min-h-screen px-2 py-16">
+      <div className="flex flex-col-reverse gap-10 lg:flex-row">
+        <div className="w-full lg:w-2/5">
           <MaskImage
             src="/images/building-2.webp"
             alt="building-2"
@@ -16,7 +16,7 @@ const About = () => {
             delay={1}
           />
         </div>
-        <div className="lg:w-3/5 w-full flex flex-col gap-10">
+        <div className="flex flex-col w-full gap-10 lg:w-3/5">
           <div>
             <Title text="We Integrate Advanced Technologies with a Creative Approach" />
           </div>
@@ -24,16 +24,16 @@ const About = () => {
             <PageLink
               text="Learn More"
               href="#"
-              className="uppercase font-semibold"
+              className="font-semibold uppercase"
             />
           </div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mt-20">
+      <div className="grid grid-cols-1 gap-10 mt-20 lg:grid-cols-3 md:grid-cols-2">
         <div>
           <Typography
             text="Unique Design Approach Reflects Individual Demands"
-            className="uppercase max-w-xs"
+            className="max-w-xs uppercase"
           />
         </div>
         <div>

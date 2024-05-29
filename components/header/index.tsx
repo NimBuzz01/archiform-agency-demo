@@ -10,7 +10,7 @@ const Header = ({ delay = 1.2 }: { delay?: number }) => {
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 100, y: 0 }}
       transition={{ duration: 1, delay }}
-      className="flex justify-between items-center p-5"
+      className="flex items-center justify-between p-5"
     >
       <Link href="/" className="relative w-12 h-12">
         <Image

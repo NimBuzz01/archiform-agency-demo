@@ -17,7 +17,7 @@ export default function Service({ index, title, setModal }: ServiceProps) {
       onMouseLeave={() => {
         setModal({ active: false, index });
       }}
-      className="flex w-full hover:opacity-50 group justify-between items-center py-6 sm:py-12 px-6 lg:px-24 border-t border-cmprimary cursor-pointer transition-all"
+      className="flex items-center justify-between w-full px-6 py-6 transition-all border-t cursor-pointer hover:opacity-50 group sm:py-12 lg:px-24 border-cmprimary"
     >
       <h2 className="group-hover:translate-x-[-10px] font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl m-0 transition-all">
         {title}

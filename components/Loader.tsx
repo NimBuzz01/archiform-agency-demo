@@ -68,7 +68,7 @@ export default function Loader() {
     >
       {dimension.width > 0 && (
         <>
-          <div className="absolute z-10 text-2xl sm:text-4xl font-bold">
+          <div className="absolute z-10 text-2xl font-bold sm:text-4xl">
             <motion.p
               variants={loaderSlide}
               initial="initial"

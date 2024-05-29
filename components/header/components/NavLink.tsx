@@ -16,7 +16,7 @@ export default function NavLink({ data, isActive, setIsActive }: NavLinkProps) {
   return (
     <div>
       <motion.div
-        className="relative inline-flex "
+        className="relative inline-flex"
         custom={index}
         variants={slide}
         initial="initial"

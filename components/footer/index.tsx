@@ -11,18 +11,18 @@ const Footer = () => {
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       <div className="fixed px-3 py-10 sm:py-16 sm:container bottom-0 w-full h-[600px]">
-        <div className="flex gap-10 flex-wrap">
+        <div className="flex flex-wrap gap-10">
           <div className="text-sm">
-            <p className="font-bold text-base mb-6">Let&apos;s Talk</p>
+            <p className="mb-6 text-base font-bold">Let&apos;s Talk</p>
             <p>hello@archiformagency</p>
             <p>+94 123 456 789</p>
           </div>
           <div className="text-sm">
-            <p className="font-bold text-base mb-6">Visit</p>
+            <p className="mb-6 text-base font-bold">Visit</p>
             <p>123, Grand Avenue</p>
             <p>London, United Kingdom</p>
           </div>
-          <div className="md:ml-auto flex flex-col text-sm gap-2 uppercase">
+          <div className="flex flex-col gap-2 text-sm uppercase md:ml-auto">
             {navLinks.map((link) => (
               <div key={link.title}>
                 <PageLink
@@ -46,14 +46,14 @@ const Footer = () => {
             text="Agency"
             stagger={0.05}
             duration={0.8}
-            className="font-light text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl"
+            className="text-4xl font-light sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl"
           />
         </div>
-        <div className="flex sm:justify-between mt-10 mb-4 gap-1 sm:items-center flex-col sm:flex-row">
+        <div className="flex flex-col gap-1 mt-10 mb-4 sm:justify-between sm:items-center sm:flex-row">
           <div className="flex items-center gap-1">
             <CopyrightIcon className="w-4 h-4" /> 2024 Archiform Agency
           </div>
-          <div className="flex items-center text-sm gap-4 uppercase">
+          <div className="flex items-center gap-4 text-sm uppercase">
             {socialLinks.map((link) => (
               <PageLink
                 text={link.title}

@@ -33,7 +33,7 @@ const Project = ({
           className="sm:max-w-lg"
         />
       </div>
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col items-center gap-4">
         <MaskImage
           src={project.img1}
           alt="Project Sub Image 1"
@@ -46,8 +46,8 @@ const Project = ({
           className="sm:max-w-[12rem] hidden lg:block"
           objectFit="cover"
         />
-        <div className="flex flex-col gap-1 mt-6 lg:mt-0 self-start">
-          <Typography text={project.title} className="uppercase font-bold" />
+        <div className="flex flex-col self-start gap-1 mt-6 lg:mt-0">
+          <Typography text={project.title} className="font-bold uppercase" />
           <Typography text={project.type} className="text-xs sm:text-sm" />
         </div>
       </div>

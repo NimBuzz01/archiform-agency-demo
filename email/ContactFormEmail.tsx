@@ -26,9 +26,9 @@ export default function ContactFormEmail({
       <Head />
       <Preview>New message from your Archiform Agency Website</Preview>
       <Tailwind>
-        <Body className="bg-gray-100 text-black">
+        <Body className="text-black bg-gray-100">
           <Container>
-            <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
+            <Section className="px-10 py-4 my-10 bg-white rounded-md borderBlack">
               <Heading className="leading-tight">
                 You received the following message from the contact form
               </Heading>

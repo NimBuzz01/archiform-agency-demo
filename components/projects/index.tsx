@@ -10,7 +10,7 @@ const Projects = () => {
       <div>
         <Title text="We Have Successfully Implemented a Wide Range of Projects of Varying Complexity and Scale" />
       </div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mt-20">
+      <div className="grid grid-cols-1 gap-10 mt-20 lg:grid-cols-3 md:grid-cols-2">
         <div>
           <Typography
             text="Our unique approach to design allows us to create unique and inspiring spaces"
@@ -27,7 +27,7 @@ const Projects = () => {
           <PageLink
             text="Learn More"
             href="#"
-            className="uppercase font-semibold"
+            className="font-semibold uppercase"
           />
         </div>
       </div>

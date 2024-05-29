@@ -15,11 +15,11 @@ const ContactPage = () => {
       <Header delay={0.6} />
       <div className="min-h-screen px-2 py-16 sm:container">
         <Title text="Lets Bring Your Project To Life." />
-        <div className="pt-16 flex flex-col justify-between md:flex-row gap-16">
-          <div className="max-w-xl w-full">
+        <div className="flex flex-col justify-between gap-16 pt-16 md:flex-row">
+          <div className="w-full max-w-xl">
             <ContactForm />
           </div>
-          <div className="max-w-xl w-full">
+          <div className="w-full max-w-xl">
             <ContactInfo />
           </div>
         </div>

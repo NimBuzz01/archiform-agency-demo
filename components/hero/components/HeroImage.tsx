@@ -31,7 +31,7 @@ const HeroImage = ({
       )}
     >
       <motion.div
-        className="absolute inset-0 bg-cmsecondary z-10"
+        className="absolute inset-0 z-10 bg-cmsecondary"
         variants={reveal}
         initial="initial"
         animate="animate"
