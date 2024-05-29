@@ -17,7 +17,7 @@ const Nav = () => {
         <div
           className={`w-full before:content-[""] before:block before:h-[1px] before:w-2/5 before:m-auto before:bg-cmsecondary before:relative before:transition before:transform before:duration-300 after:content-[""] after:block after:h-[1px] after:w-2/5 after:m-auto after:bg-cmsecondary after:relative after:transition after:transform after:duration-300 after:top-[-5px] before:top-[5px] ${
             isActive
-              ? "after:rotate-45 after:-top-1/2 before:-rotate-45 before:top-1/2"
+              ? "after:rotate-45 after:top-[-1px] before:-rotate-45 before:top-[0px]"
               : ""
           }`}
         ></div>
